@@ -44,8 +44,8 @@ export default {
         commit('updateState', {
           movies: uniqBy(Search, 'imdbID')
         })
-        console.log(totalResults) //304 => 31 pages
-        console.log(typeof totalResults) //string
+        //console.log(totalResults) //304 => 31 pages
+        //console.log(typeof totalResults) //string
   
         const total = parseInt(totalResults, 10) //문자열을 10진법 숫자로 변환
         const pageLength = Math.ceil(total / 10)
